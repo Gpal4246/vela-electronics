@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vela Electronics — Mini Checkout</title>
+    <meta
+      name="description"
+      content="Dark editorial electronics storefront and accessible client-side checkout for Vela Electronics with integer INR pricing."
+    />
+    <meta property="og:title" content="Vela Electronics — Mini Checkout" />
+    <meta
+      property="og:description"
+      content="Dark editorial electronics storefront and accessible client-side checkout for Vela Electronics with integer INR pricing."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand-wordmark">VELA ELECTRONICS</a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#collection" class="nav-link">Collection</a>
+          <a href="#story" class="nav-link">Story</a>
+          <a href="#checkout" class="nav-link">Checkout</a>
+        </nav>
+
+        <a href="#checkout" class="header-bag-link" aria-label="Shopping bag">
+          <span>Bag</span>
+          <span id="header-cart-count" class="header-bag-count tabular-nums">(0)</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="top" class="site-main">
+      <div id="live-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+      <!-- Active Editorial Storefront & Integrated Checkout Workspace -->
+      <div id="checkout-workspace">
+        <!-- Full-Bleed Dark Editorial Hero -->
+        <section class="hero-section" aria-labelledby="hero-heading">
+          <div class="hero-backdrop" aria-hidden="true">
+            <img
+              src="/src/assets/images/hero_dark_headphones_1795442049816.jpg"
+              alt=""
+              class="hero-image"
+              referrerpolicy="no-referrer"
+            />
+            <div class="hero-scrim"></div>
+          </div>
+
+          <div class="container hero-stage">
+            <h1 id="hero-heading" class="hero-title" tabindex="-1">
+              <span class="hero-line"><span class="hero-line-inner">SOUND,</span></span>
+              <span class="hero-line"><span class="hero-line-inner">STRIPPED</span></span>
+              <span class="hero-line"><span class="hero-line-inner">TO FORM.</span></span>
+            </h1>
+
+            <div class="hero-bottom">
+              <p class="hero-lead">
+                Two considered dark-aluminum hardware objects. Fixed prices in Indian Rupees.
+              </p>
+              <a href="#collection" class="btn btn-accent">Explore Collection</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Seamless Single-Row Brand Statement Marquee -->
+        <section class="statement-band" aria-label="Brand statement">
+          <div class="statement-track">
+            <div class="statement-group">
+              <span>Form without noise</span>
+              <span class="statement-sep" aria-hidden="true">—</span>
+              <span>Two essential hardware objects</span>
+              <span class="statement-sep" aria-hidden="true">—</span>
+              <span>Fixed INR pricing</span>
+              <span class="statement-sep" aria-hidden="true">—</span>
+              <span>Vela Electronics</span>
+              <span class="statement-sep" aria-hidden="true">—</span>
+            </div>
+            <div class="statement-group" aria-hidden="true">
+              <span>Form without noise</span>
+              <span class="statement-sep">—</span>
+              <span>Two essential hardware objects</span>
+              <span class="statement-sep">—</span>
+              <span>Fixed INR pricing</span>
+              <span class="statement-sep">—</span>
+              <span>Vela Electronics</span>
+              <span class="statement-sep">—</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Asymmetrical Editorial Product Collection (Exactly Two Products) -->
+        <section id="collection" class="collection-section reveal-section" aria-labelledby="catalogue-heading">
+          <div class="container">
+            <div class="collection-header">
+              <h2 id="catalogue-heading" class="section-display-title" tabindex="-1">
+                Product Catalogue
+              </h2>
+              <p class="collection-note">Two permanent objects. Fixed INR (₹) pricing.</p>
+            </div>
+
+            <div id="product-list" class="editorial-product-list"></div>
+          </div>
+        </section>
+
+        <!-- Editorial Brand Story -->
+        <section id="story" class="story-section reveal-section" aria-labelledby="story-heading">
+          <div class="container story-composition">
+            <div class="story-copy">
+              <h2 id="story-heading" class="section-display-title">BUILT TO STAY.</h2>
+              <p class="story-lead">
+                Vela Electronics makes two tools for quiet daily work—nothing seasonal, nothing
+                disposable.
+              </p>
+              <p class="story-body">
+                Every decision favours restraint: dark matte surfaces that disappear onto a desk,
+                honest materials that wear gracefully, and fixed prices that remain clear from first
+                glance to final receipt.
+              </p>
+            </div>
+
+            <div class="story-media">
+              <img
+                src="/src/assets/images/story_vela_craft_1795440163562.jpg"
+                alt="Macro detail of Vela Electronics matte black anodized aluminum enclosure"
+                class="story-image"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Integrated Shopping Bag & Checkout -->
+        <section id="checkout" class="checkout-band reveal-section" aria-labelledby="checkout-band-heading">
+          <div class="container">
+            <div class="checkout-band-header">
+              <h2 id="checkout-band-heading" class="section-display-title">Bag &amp; Checkout</h2>
+            </div>
+
+            <div class="checkout-layout">
+              <section class="cart-column" aria-labelledby="cart-heading">
+                <div class="column-header">
+                  <h3 id="cart-heading" class="column-title">Shopping Cart</h3>
+                  <span id="cart-item-count" class="cart-count-text tabular-nums">0 items</span>
+                </div>
+
+                <div id="cart-empty-state" class="cart-empty">
+                  <p class="cart-empty-title">Your cart is empty</p>
+                  <p class="cart-empty-copy">
+                    Add Wireless Headphones or USB-C Hub above to begin checkout.
+                  </p>
+                </div>
+
+                <ul id="cart-list" class="cart-list" aria-label="Shopping cart items" hidden></ul>
+
+                <div class="order-total-row" aria-label="Order total summary">
+                  <span class="order-total-label">Order Total</span>
+                  <output id="order-total" class="order-total-value tabular-nums" aria-live="polite">
+                    ₹0.00
+                  </output>
+                </div>
+              </section>
+
+              <section class="checkout-column" aria-labelledby="checkout-heading">
+                <div class="column-header">
+                  <h3 id="checkout-heading" class="column-title">Checkout</h3>
+                </div>
+
+                <form id="checkout-form" class="checkout-form" novalidate>
+                  <div id="cart-error" class="form-alert" role="alert" tabindex="-1" hidden></div>
+
+                  <div class="form-field">
+                    <label for="customer-name" class="field-label">
+                      Customer Name <span class="required-mark" aria-hidden="true">*</span>
+                    </label>
+                    <input
+                      id="customer-name"
+                      name="customerName"
+                      type="text"
+                      class="text-input"
+                      autocomplete="name"
+                      placeholder="Enter your full name"
+                      required
+                      aria-required="true"
+                      aria-describedby="customer-name-error"
+                    />
+                    <p id="customer-name-error" class="field-error" role="alert" hidden></p>
+                  </div>
+
+                  <button id="place-order-btn" type="submit" class="btn btn-accent btn-full">
+                    Place Order
+                  </button>
+                </form>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Dedicated Order Confirmation Receipt (replaces storefront & checkout on submission) -->
+      <div id="confirmation-mount" class="confirmation-mount container" hidden></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-brand">VELA ELECTRONICS</span>
+        <span class="footer-note">Client-side checkout demonstration · No payment processed</span>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
